@@ -17,6 +17,8 @@
 Workshop 6 ชั่วโมง (09:00–17:00) ที่สอนให้นักเรียน
 สร้าง Edge AI prototype ด้วย Arduino UNO Q + Modulino + Edge Impulse จบใน 1 วัน — เพื่อเตรียมไปแข่ง Prototype Day ในวันถัดไป
 
+Repo นี้ควรอ่านเหมือนคู่มือระหว่างเรียน: เปิดดูตามลำดับ, ทำทีละช่วง, แล้วเช็คว่า repo ทีมของคุณมีหลักฐานครบตามที่ต้องส่ง
+
 ### 🎯 เป้าหมายการเรียนรู้
 
 หลังจบ Day 1 นักเรียนจะ:
@@ -62,7 +64,7 @@ coding-thailand-edge-ai-workshop/
 │   ├── track-b-vision/                ← Vision classification
 │   ├── track-c-environment/           ← Multi-sensor fusion
 │   └── track-d-audio/                 ← Audio classification
-├── templates/                         ← Template ให้นักเรียน fork
+├── templates/                         ← Template สำหรับสร้าง repo ทีม
 │   ├── team-repo-template/            ← Template repo ของทีม
 │   └── pull-request-template.md
 └── assets/                            ← รูป diagram
@@ -70,43 +72,40 @@ coding-thailand-edge-ai-workshop/
 
 ---
 
-## 🚀 เริ่มต้นใช้งาน 
+## 🚀 เริ่มตรงนี้ (สำหรับนักเรียน)
 
-### 1. Fork repo นี้
+ถ้าคุณเพิ่งเข้ามาใน workshop นี้ ให้ทำตามลำดับนี้:
 
-คลิก **Fork** ที่มุมขวาบน เพื่อสร้างสำเนาในบัญชี GitHub ของคุณ
-
-### 2. ปรับแต่งให้เหมาะกับ session ของคุณ
-
-แก้ไฟล์ใน `docs/` และ `slides/` ตามต้องการ
-
-### 3. เตรียมอุปกรณ์
-
-ดู [`docs/00-equipment-checklist.md`](docs/00-equipment-checklist.md)
-
----
-
-## 👨‍🎓 สำหรับนักเรียน
-
-### Quick Start
-
-1. ดู [Timeline วันนี้](docs/01-schedule.md)
-2. เลือก [Track ของทีม](docs/02-tracks.md)
-3. เรียน [Git พื้นฐาน 15 นาที](docs/04-git-basics.md)
+1. ดู [Timeline วันนี้](docs/01-schedule.md) เพื่อรู้ว่าช่วงไหนต้องทำอะไร
+2. เลือก [Track ของทีม](docs/02-tracks.md) ให้เหมาะกับเวลาที่มีและความถนัดของทีม
+3. เรียน [Git พื้นฐาน 15 นาที](docs/04-git-basics.md) ถ้ายังไม่คล่อง Git/GitHub
 4. สร้าง repo ทีมใหม่จาก [Team Repo Template](templates/team-repo-template/)
-5. ทำตาม Lab manual ของ track ที่เลือก
+5. ทำตาม lab manual ของ track ที่เลือก
 
 เริ่มจากคัดลอกไฟล์ในโฟลเดอร์ template ไปใส่ repo ใหม่ของทีมบน GitHub แล้วค่อย clone repo นั้นลงเครื่อง
 
-### Submission Checklist
+ถ้าติดขัดระหว่างทาง ให้เปิด [Troubleshooting Guide](docs/05-troubleshooting.md) ก่อนเรียก TA
 
-ก่อนจบวัน ทุกทีมต้องมีใน repo:
+## ✅ ก่อนจบวัน ทีมคุณควรมี
 
 - [ ] Dataset ที่ใช้ train (อยู่ใน `dataset/` หรือ link Edge Impulse project)
 - [ ] Model V1 และ V2 (export จาก Edge Impulse)
 - [ ] Prediction Log อย่างน้อย 10 cases (`logs/predictions.csv`)
 - [ ] Idea Canvas สำหรับ Day 2 (`worksheets/W4-idea-canvas.md`)
 - [ ] README ของทีม อธิบายโจทย์, classes, ผลลัพธ์
+
+## 🧑‍🏫 สำหรับครู/ผู้จัด
+
+ถ้าคุณกำลังใช้ repo นี้เพื่อเตรียม session:
+
+1. เช็คอุปกรณ์จาก [docs/00-equipment-checklist.md](docs/00-equipment-checklist.md)
+2. ปรับ [docs/01-schedule.md](docs/01-schedule.md) และ [slides/day1-outline.md](slides/day1-outline.md) ให้ตรงกับบริบทของห้อง
+3. ใช้ [docs/03-rubric.md](docs/03-rubric.md) เป็นเกณฑ์ประเมินกลาง
+
+ไฟล์ที่เป็นมุมมองครู/วิทยากรโดยตรง:
+- [docs/00-equipment-checklist.md](docs/00-equipment-checklist.md)
+- [slides/day1-outline.md](slides/day1-outline.md)
+- [labs/anchor-demo/README.md](labs/anchor-demo/README.md)
 
 ---
 

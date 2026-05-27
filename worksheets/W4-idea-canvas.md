@@ -4,7 +4,7 @@
 # 📝 Worksheet W4 — Idea Canvas for Day 2
 
 > **ทำในช่วง 16:00-16:30**
-> เตรียมไอเดียสำหรับ Prototype Day (วันพรุ่งนี้)
+> เปลี่ยนสิ่งที่ทีมทำได้ใน Day 1 ให้เป็นแผน prototype ที่อธิบายและ demo ต่อได้ใน Day 2/3
 
 ---
 
@@ -178,7 +178,7 @@ git push
 
 ## 💡 Tips สำหรับ Day 2/3
 
-1. **Pitch Day 3 = นักเรียนพูดเอง** — ครูที่ปรึกษาช่วยไม่ได้! เริ่มซ้อมตั้งแต่ Day 2
+1. **Pitch Day 3 = ทีมคุณต้องอธิบายเอง** — เริ่มซ้อมตั้งแต่ Day 2 ว่าใครจะพูดส่วนไหน
 2. **Demo Day 3 = ต้อง live** — เตรียม backup ในกรณี internet/hardware พัง
 3. **Document ทุก iteration** ใน GitHub — commit ทุก hour
 4. **Token = constraint ที่สอนการตัดสินใจ** — เลือกสิ่งจำเป็น

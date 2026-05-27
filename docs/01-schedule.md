@@ -5,6 +5,8 @@
 
 > **เป้าหมาย:** ทุกทีมจบวันด้วย Model V2 + Prediction Log + Idea Canvas พร้อมไป Prototype Day
 
+เอกสารนี้เขียนจากมุมของผู้เรียน: ในแต่ละช่วงให้ดูว่าคุณต้องทำอะไร, ควรได้อะไรกลับมา, และอะไรคือสัญญาณว่าทีมกำลังไปถูกทาง
+
 ---
 
 ## ภาพรวม Timeline
@@ -39,30 +41,19 @@
 
 ### ⏰ 09:00–09:30 | นำเข้าสู่บทเรียน + Anchor Demo
 
-**ผู้สอน:** วิทยากรหลัก
+ช่วงนี้คุณควรได้ 3 อย่าง:
+1. เห็นภาพรวมของ Edge AI pipeline ตั้งแต่เก็บข้อมูลจน deploy
+2. เห็นตัวอย่าง prototype ที่จบ flow ได้จริง
+3. รู้ว่าตลอดวันทีมต้องเก็บหลักฐานอะไรไว้ใน GitHub repo
 
-**เนื้อหา:**
-1. **Edge AI คืออะไร** (5 นาที)
-   - ทำไม inference ที่ edge ดีกว่า cloud
-   - ตัวอย่าง real-world: ถังขยะอัจฉริยะ, smart camera, fall detector
-2. **Anchor Demo: Gesture Wand** (15 นาที)
-   - สาธิตจบทั้ง pipeline ต่อหน้านักเรียน
-   - เก็บข้อมูล 3 ท่า (วงกลม / Z / นิ่ง) → train → deploy → demo
-   - ใช้ Modulino Movement + Pixels
-3. **Skill Assessment 30 คะแนน** (5 นาที)
-   - ย้ำว่าประเมินตลอดวัน
-   - หลักฐานคือ commit ใน GitHub repo ของทีม
-4. **กฎ Day 1** (5 นาที)
-   - ห้ามใช้โค้ดสำเร็จรูปจากอินเทอร์เน็ตโดยไม่อ้างอิง
-   - ทุก decision ต้องอธิบายได้ (Debug & Explain)
-
-**สื่อ:** Slide 1-8 + Live Demo
+สิ่งที่ควรจับตาระหว่างดู demo:
+- เขาเก็บข้อมูลแบบไหน
+- เขาดูผล train ตรงไหน
+- ตอน deploy สำเร็จ เขาตรวจว่า "ใช้ได้จริง" ยังไง
 
 ---
 
 ### ⏰ 09:30–10:00 | UNO Q Setup + Modulino Tour + Git 101
-
-**ผู้สอน:** วิทยากร + TA
 
 **Part A — UNO Q + Modulino (15 นาที):**
 - เชื่อม USB-C, รอ boot
@@ -73,9 +64,13 @@
 **Part B — Git 101 (15 นาที):**
 - ดู [`04-git-basics.md`](04-git-basics.md)
 - ทุกทีม:
-       1. สร้าง repo ทีมใหม่จาก [team-repo-template](../templates/team-repo-template/)
-       2. Clone repo ทีมลง laptop
+  1. สร้าง repo ทีมใหม่จาก [team-repo-template](../templates/team-repo-template/)
+  2. Clone repo ทีมลง laptop
   3. แก้ README ใส่ชื่อทีม + commit แรก
+
+ก่อนจบช่วงนี้ ทีมคุณควรมี:
+- UNO Q ที่เปิดติดและคุยกับอุปกรณ์ได้
+- repo ทีมที่มี commit แรกขึ้น GitHub แล้ว
 
 ---
 
@@ -93,17 +88,15 @@
   - แต่ละ class แยกกันด้วย feature อะไร?
   - มี edge case อะไรที่อาจทำให้สับสน?
   - เก็บกี่ตัวอย่าง/class? ทำไม?
-- ครู/TA review ก่อนเริ่มเก็บข้อมูล
+- ขอ TA review ก่อนเริ่มเก็บข้อมูลจริง
 
-⚠️ **ห้ามเก็บข้อมูลก่อนได้รับการ approve จาก TA** — กันการเสียเวลา
+⚠️ **อย่าเพิ่งเก็บข้อมูลถ้า class ยังไม่ชัด** — ถ้านิยาม class ซ้อนกันตั้งแต่ต้น ทีมจะเสียเวลาตอน train และ debug มาก
 
 ---
 
 ### ⏰ 10:30–12:00 | Data Collection Hands-on ★
 
-**ผู้สอน:** TA per 3-5 ทีม
-
-**เนื้อหา:**
+**สิ่งที่คุณต้องทำ:**
 - เริ่ม Edge Impulse Studio → New Project → ตั้งชื่อ
 - เชื่อม UNO Q กับ Edge Impulse (มี script ใน [`labs/setup/connect-edge-impulse.md`](../labs/setup/connect-edge-impulse.md))
 - เก็บข้อมูลตามเป้าหมาย:
@@ -112,11 +105,12 @@
   - **Track C (Environment):** 200 samples × class
   - **Track D (Audio):** 50 samples × class, แต่ละ sample 1 วินาที
 
-**ระหว่างทาง — สอน Bias Awareness:**
-- ครูเดินเช็คว่าทีมเก็บข้อมูลครบทุก variation หรือเปล่า
-- ถามนำ: "ถ้าใช้ในห้องอื่น/คนอื่นใช้ จะยังทำงานได้ไหม?"
+**เช็กคุณภาพระหว่างทาง:**
+- แต่ละ class มีจำนวนใกล้กันไหม
+- มี variation ของมุม, แสง, ระยะ, คนใช้ หรือ environment ครบพอไหม
+- ถ้าเอาไปใช้กับคนหรือสถานที่อื่น ยังพอมีโอกาสทำงานได้ไหม
 
-**Submission:**
+**สิ่งที่ควรอัปเดตลง repo:**
 - Commit Worksheet W2 [`worksheets/W2-data-collection-log.md`](../worksheets/W2-data-collection-log.md)
 - Link Edge Impulse project ใน README ของทีม
 
@@ -124,13 +118,13 @@
 
 ### ⏰ 12:00–13:00 | พักเที่ยง
 
-ครู/TA review repo ของแต่ละทีมระหว่างทาน เห็นทีมไหนติด → mark ไว้
+ช่วงพักนี้ควรใช้เช็กสั้น ๆ ว่า README ทีม, link project และ Worksheet W2 ถูก push ขึ้น repo แล้ว
 
 ---
 
 ### ⏰ 13:00–14:00 | Train V1 + Deploy
 
-**ผู้สอน:** วิทยากร + TA
+**เป้าหมายช่วงนี้:** ให้ทีมมี V1 ที่ deploy ลง UNO Q ได้จริง
 
 **Step-by-Step:**
 1. ใน Edge Impulse → **Create Impulse**
@@ -153,7 +147,7 @@
 
 ### ⏰ 14:00–15:30 | 10-Case Testing + Iterate to V2 ★
 
-**นี่คือช่วงเก็บคะแนน Data & Testing + Debug & Explain มากที่สุด**
+นี่คือช่วงที่ทีมของคุณจะเห็นชัดที่สุดว่า model ใช้ได้จริงหรือยัง และต้องปรับอะไรต่อ
 
 **Part A — 10-Case Test (40 นาที):**
 - ใช้ Worksheet W3 [`worksheets/W3-prediction-log.md`](../worksheets/W3-prediction-log.md)
@@ -181,26 +175,24 @@
 - Accuracy V1 → V2 เปลี่ยนเท่าไหร่
 - 1 thing learned
 
-ครูประเมิน Participation & Collaboration จากช่วงนี้
+คิดว่าช่วงนี้คือเวลาที่ทีมคุณจะโชว์ทั้ง "สิ่งที่ทำได้" และ "สิ่งที่เรียนรู้"
 
 ---
 
 ### ⏰ 16:00–16:30 | Wrap Up + Idea Canvas
 
-- ครูสรุป Real World Cases 3 ตัวอย่าง:
-  - **เกษตร:** ตรวจโรคพืชจากใบ (Vision)
-  - **สุขภาพ:** Fall detector สำหรับผู้สูงอายุ (Motion)
-  - **อุตสาหกรรม:** ตรวจเครื่องจักรเสียจากเสียง (Audio)
-- แนะนำ LEAN / IDEA CANVAS
-- ทุกทีมร่าง Idea Canvas สำหรับ Day 2 → commit Worksheet W4
+ช่วงนี้คุณควรสรุปว่า prototype ของทีมจะต่อยอดเป็นอะไรใน Day 2 ได้บ้าง เช่น:
+- **เกษตร:** ตรวจโรคพืชจากใบ (Vision)
+- **สุขภาพ:** Fall detector สำหรับผู้สูงอายุ (Motion)
+- **อุตสาหกรรม:** ตรวจเครื่องจักรเสียจากเสียง (Audio)
+
+จากนั้นร่าง Idea Canvas สำหรับ Day 2 แล้ว commit Worksheet W4
 
 ---
 
 ### ⏰ 16:30–17:00 | Maker Space + Token Strategy
 
-- พาทัวร์ Maker Space
-- อธิบาย Token Management (5 คะแนน)
-- แต่ละทีมร่างรายการอุปกรณ์ที่จะใช้ + token ที่จะเบิก
+ถ้าทีมคุณจะต่อยอดใน Day 2 ช่วงนี้คือเวลาคิดว่าจะต้องใช้อุปกรณ์อะไรเพิ่ม และเพราะอะไร
 
 ---
 
@@ -218,9 +210,9 @@
 
 ---
 
-## 🎯 Tips สำหรับครู
+## 🎯 Tips สำหรับนักเรียน
 
-1. **อย่าตอบทันทีเวลานักเรียนถาม** — ใช้คำถามนำเสมอ ("ลองอะไรมาแล้ว?", "คิดว่าเพราะอะไร?")
-2. **เดินดู Git commit** — บอกได้ว่าทีมไหน active ทีมไหนติด
-3. **ดึง Hipster ขึ้นมาพูด** — มักเป็นบทบาทที่เงียบสุด แต่มีไอเดียดี
-4. **เน้น Prediction Log มากกว่า Accuracy** — เพราะคะแนนวัดที่กระบวนการ
+1. ถ้าติดเกิน 5 นาที ให้เขียนก่อนว่าติดตรงไหน, error อะไร, และลองอะไรไปแล้ว
+2. อย่าดูแค่ accuracy ใน Studio ให้ดู Prediction Log และ case ที่ model พลาดด้วย
+3. ถ้าเวลาเริ่มไม่พอ ให้ลด scope ก่อน เช่น ลดจำนวน class หรือใช้โจทย์ Basic แล้วทำให้จบ
+4. Commit เป็นช่วง ๆ ระหว่างวัน จะช่วยให้ทั้งทีมตามงานกันทันและอธิบายสิ่งที่ทำได้ง่ายขึ้น

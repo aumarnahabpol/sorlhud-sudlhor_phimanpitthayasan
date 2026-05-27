@@ -6,6 +6,8 @@
 > Coding Thailand 2026 — Edge AI Workshop
 > [Track A / B / C / D] — [Basic / Intermediate / Advanced]
 
+ใช้ไฟล์นี้เป็นหน้าเล่าเรื่องของทีมคุณ: คนอ่านควรเข้าใจได้ภายในไม่กี่นาทีว่าทีมกำลังแก้ปัญหาอะไร ใช้ model แบบไหน และ V2 ดีขึ้นจาก V1 ยังไง
+
 ---
 
 ## 👥 ทีมเรา
@@ -59,6 +61,8 @@
 
 ## 📊 Results
 
+กรอกเฉพาะตัวเลขที่ทีมวัดได้จริงจากการ train และ test ไม่ต้องเดาตัวเลขให้ดูดี
+
 | Metric | V1 | V2 | Δ |
 |---|---|---|---|
 | Validation accuracy | __% | __% | +/-__% |
@@ -94,7 +98,7 @@
 
 ---
 
-## ✅ Day 1 Submission Checklist
+## ✅ เช็กก่อนส่ง Day 1
 
 - [ ] Worksheet W1-W4 ครบ
 - [ ] Edge Impulse project link ใน README
@@ -106,7 +110,7 @@
 
 ---
 
-## 🤝 Contributing (สำหรับสมาชิกทีม)
+## 🤝 วิธีอัปเดต repo ทีม
 
 ```bash
 # Clone repo

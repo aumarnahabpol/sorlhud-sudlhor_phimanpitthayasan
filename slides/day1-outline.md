@@ -6,6 +6,8 @@
 > **25 สไลด์ สำหรับวิทยากร** — ใช้กับช่วง opening (09:00-09:30) + transitions
 >
 > ไฟล์นี้คือ structure ให้คุณนำไปสร้าง slide จริงใน Canva/PowerPoint/Google Slides
+>
+> ถ้าคุณเป็นนักเรียน ให้ข้ามไฟล์นี้ไปดู [docs/01-schedule.md](../docs/01-schedule.md) หรือ lab ของ track ที่เลือกแทน
 
 ---
 

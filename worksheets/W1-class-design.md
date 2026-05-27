@@ -4,7 +4,7 @@
 # 📝 Worksheet W1 — Class Design
 
 > **ทำในช่วง 10:00-10:30**
-> ให้ TA approve ก่อนเริ่มเก็บข้อมูล
+> ตอบให้ครบก่อนเริ่มเก็บข้อมูล แล้วค่อยให้ TA ช่วยเช็กว่าขอบเขต class ชัดพอหรือยัง
 
 ---
 
@@ -145,9 +145,9 @@
 ## ✅ Sign-off
 
 - [ ] ทีมเขียน Worksheet ครบทุกข้อ
-- [ ] TA review + approve
+- [ ] TA review + approve แผนเก็บข้อมูล
 
-**TA Name:** _________________  **เวลา:** _______
+**Reviewer (TA/ครู):** _________________  **เวลา:** _______
 
 ---
 
@@ -160,4 +160,4 @@
    git commit -m "docs: เพิ่ม W1 class design สำหรับ Track [X] ระดับ [Y]"
    git push
    ```
-3. แจ้ง TA มา review
+3. แจ้ง TA มา review แผน class design
