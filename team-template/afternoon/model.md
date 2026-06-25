@@ -3,24 +3,24 @@
 
 # Afternoon — Model
 
-- **Input ที่ใช้:** _______________
-- **Classes:** _______________
-- **จำนวนตัวอย่าง/class:** _______________
-- **วิธีเชื่อมเข้า Edge Impulse:** [ ] กล้อง/ไมค์ (`edge-impulse-linux`)  [ ] Modulino (`data-forwarder`)
+- **Input ที่ใช้:** webcam
+- **Classes:** ค้อน กระดาษ กรรไกร
+- **จำนวนตัวอย่าง/class:** 20 ต่อ 1 คลาส
+- **วิธีเชื่อมเข้า Edge Impulse:** [x] กล้อง/ไมค์ (`edge-impulse-linux`)  [ ] Modulino (`data-forwarder`)
 
 ## V1
-- Accuracy (ใน Studio): ____
-- F1 score ราย class (class : F1): _______________
-- class ที่ F1 ต่ำสุด: _______________
-- รูป Confusion Matrix: ![cm-v1](../assets/cm-v1.png)
-- อ่านแล้วเห็นอะไร (class ไหนสับสนกับ class ไหน): _______________
+- Accuracy (ใน Studio): 80%
+- F1 score ราย class (class : F1): 0.80
+- class ที่ F1 ต่ำสุด: 0.67
+- รูป Confusion Matrix: ![cm-v1](https://drive.google.com/drive/folders/10AQ8QvoRv5y1Tbc9rn6gJOV6AXaCXznz?usp=drive_link)
+- อ่านแล้วเห็นอะไร (class ไหนสับสนกับ class ไหน): กรรไกรกับกระดาษสับสน 25% , ค้อนกับกระดาษสับสน 50%
 
 ## V2 (ถ้าทัน)
 - แก้อะไรจาก V1: _______________
 - Accuracy V2: ____  | ดีขึ้น/แย่ลงตรงไหน: _______________
 
 ## รันบนบอร์ด
-- [ ] วิธีรัน: [ ] กล้อง/ไมค์ → `edge-impulse-linux-runner` (Web UI :4912)  [ ] Modulino → Arduino library ในสเก็ตช์
+- [x] วิธีรัน: [x] กล้อง/ไมค์ → `edge-impulse-linux-runner` (Web UI :4912)  [ ] Modulino → Arduino library ในสเก็ตช์
 - [ ] ป้อน input จริงแล้ว prediction เปลี่ยนตาม (inferencing time: ____ ms)
 - คลิป/รูปตอนรัน: ![run](../assets/run.jpg)
 
