@@ -10,9 +10,9 @@
 
 | Input | ต่อผ่าน? | หลักฐาน |
 |---|---|---|
-| 1. Modulino sensor (Qwiic) | [yes] | ![pixel_sensor](../assets/modulino) |
-| 2. USB Webcam | [ ] | ![camera](../assets/webcam_test) |
-| 3. USB Mic | [ ] | ![mic](../assets/mic.jpg) |
+| 1. Modulino sensor (Qwiic) | [yes] | ![pixel_sensor](../assets/modulino.png) |
+| 2. USB Webcam | [yes] | ![camera](../assets/webcam_test.png) |
+| 3. USB Mic | [yes] | ![mic](../assets/mic-test.png) |
 
 ## Modulino — ลองกี่ตัว (มี 7 ตัว)
 
@@ -20,7 +20,7 @@
 
 - [yes] Movement  - [yes] Distance  - [yes] Thermo  - [yes] Buttons  - [yes] Knob  - [yes] Pixels  - [yes] Buzzer
 
-**ตัวที่ค่าแยกสถานการณ์ได้ชัดสุด (น่าเอาไปเทรนบ่าย):** _______________
+**ตัวที่ค่าแยกสถานการณ์ได้ชัดสุด (น่าเอาไปเทรนบ่าย):** กล่อง webcam
 
 ## Challenge (ถ้าทำ)
 
