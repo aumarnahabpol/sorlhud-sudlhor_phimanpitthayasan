@@ -10,9 +10,9 @@
 
 | Input | ต่อผ่าน? | หลักฐาน |
 |---|---|---|
-| 1. Modulino sensor (Qwiic) | [yes] | ![pixel_sensor](https://drive.google.com/drive/folders/10AQ8QvoRv5y1Tbc9rn6gJOV6AXaCXznz?usp=sharing) |
-| 2. USB Webcam | [yes] | ![camera](https://drive.google.com/drive/folders/10AQ8QvoRv5y1Tbc9rn6gJOV6AXaCXznz?usp=sharing) |
-| 3. USB Mic | [yes] | ![mic](https://drive.google.com/drive/folders/10AQ8QvoRv5y1Tbc9rn6gJOV6AXaCXznz?usp=sharing) |
+| 1. Modulino sensor (Qwiic) | [yes] | (https://drive.google.com/drive/folders/10AQ8QvoRv5y1Tbc9rn6gJOV6AXaCXznz?usp=sharing) |
+| 2. USB Webcam | [yes] | (https://drive.google.com/drive/folders/10AQ8QvoRv5y1Tbc9rn6gJOV6AXaCXznz?usp=sharing) |
+| 3. USB Mic | [yes] | (https://drive.google.com/drive/folders/10AQ8QvoRv5y1Tbc9rn6gJOV6AXaCXznz?usp=sharing) |
 
 ## Modulino — ลองกี่ตัว (มี 7 ตัว)
 
